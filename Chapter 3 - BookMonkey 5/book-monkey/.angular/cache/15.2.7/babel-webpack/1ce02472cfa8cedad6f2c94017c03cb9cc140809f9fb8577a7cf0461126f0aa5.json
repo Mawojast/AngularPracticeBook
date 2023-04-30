@@ -1,0 +1,1 @@
+{"ast":null,"code":"export function noop() {}","map":{"version":3,"names":["noop"],"sources":["C:/xampp/htdocs/AngularMalcherPraxisbuch/Chapter 3 - BookMonkey 5/book-monkey/node_modules/rxjs/dist/esm/internal/util/noop.js"],"sourcesContent":["export function noop() { }\n"],"mappings":"AAAA,OAAO,SAASA,IAAI,GAAG,CAAE"},"metadata":{},"sourceType":"module","externalDependencies":[]}
