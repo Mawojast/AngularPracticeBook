@@ -1,18 +1,12 @@
-import { Component, EventEmitter, Output } from '@angular/core';
-import { Book } from '../shared/book';
-@Component({
-  selector: 'bm-book-list',
-  templateUrl: './book-list.component.html',
-  styleUrls: ['./book-list.component.css']
+import { Injectable } from '@angular/core';
+import { Book } from './book';
+
+@Injectable({
+  providedIn: 'root'
 })
-export class BookListComponent {
+export class BookStoreService {
 
-  books: Book[] = [];
-  @Output() selectBook = new EventEmitter<Book>();
-
-  doSelect(book: Book){
-    this.selectBook.emit(book);
-  }
+  private books:Book[] = [];
 
   constructor() {
     this.books = [
@@ -34,6 +28,10 @@ export class BookListComponent {
       thumbnailUrl: 'https://cdn.ng-buch.de/backen.png',
       description: 'Tolle Backtipps für Mensch und Tier'
       }
-      ];
+    ];
+  }
+
+  getAll(): Book[]{
+    return this.books;
   }
 }
