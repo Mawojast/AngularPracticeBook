@@ -9,13 +9,6 @@ import { BookStoreService } from 'src/app/shared/book-store.service';
 export class BookListComponent {
 
   books: Book[] = [];
-  @Output() selectBook = new EventEmitter<Book>();
-
-
-
-  doSelect(book: Book){
-    this.selectBook.emit(book);
-  }
 
   constructor(private service: BookStoreService) {
     this.books = this.service.getAll();
