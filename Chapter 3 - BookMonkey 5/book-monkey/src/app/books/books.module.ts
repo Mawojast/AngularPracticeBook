@@ -18,9 +18,5 @@ import { BooksRoutingModule } from './books-routing.module';
     CommonModule,
     BooksRoutingModule
   ],
-  exports: [
-    BookListComponent,
-    BookDetailsComponent
-  ]
 })
 export class BooksModule { }
