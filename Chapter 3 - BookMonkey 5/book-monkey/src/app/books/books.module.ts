@@ -7,6 +7,8 @@ import { BookDetailsComponent } from './book-details/book-details.component';
 
 import { BooksRoutingModule } from './books-routing.module';
 import { IsbnPipe } from './shared/isbn.pipe';
+import { ConfirmDirective } from './shared/confirm.directive';
+import { LoggedinOnlyDirective } from './shared/loggedin-only.directive';
 
 
 @NgModule({
@@ -14,7 +16,9 @@ import { IsbnPipe } from './shared/isbn.pipe';
     BookListComponent,
     BookListItemComponent,
     BookDetailsComponent,
-    IsbnPipe
+    IsbnPipe,
+    ConfirmDirective,
+    LoggedinOnlyDirective
   ],
   imports: [
     CommonModule,
