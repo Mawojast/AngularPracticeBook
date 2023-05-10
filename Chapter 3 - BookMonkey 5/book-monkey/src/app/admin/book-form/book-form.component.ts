@@ -42,8 +42,9 @@ export class BookFormComponent implements OnChanges {
     const authors = formValue.authors.filter(author => !!author);
     const newBook: Book = {
       ...formValue,
-      authors: []
+      authors
     };
+
     this.submitBook.emit(newBook);
   }
 

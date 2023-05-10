@@ -22,11 +22,9 @@ export class BookDetailsComponent {
   }
 
   removeBook(isbn: string){
-    if(window.confirm('Remove book?')){
       this.service.remove(isbn).subscribe(() => {
         this.router.navigateByUrl('/books');
       });
-    }
   }
 }
 
