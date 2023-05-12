@@ -4,12 +4,10 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AuthInterceptor } from './shared/auth.interceptor';
-
 import { AppComponent } from './app.component';
-import { BooksModule } from './books/books.module';
 import { HomeComponent } from './home/home.component';
 import { SearchComponent } from './search/search.component';
-import { AdminModule } from './admin/admin.module';
+
 
 @NgModule({
   declarations: [
@@ -20,9 +18,7 @@ import { AdminModule } from './admin/admin.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BooksModule,
     HttpClientModule,
-    AdminModule
   ],
   providers: [{
     provide: HTTP_INTERCEPTORS,
